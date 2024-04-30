@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    background: rgb(255, 218, 0);
+    background: linear-gradient(90deg, rgba(255, 218, 0, 1) 0%, rgba(0, 198, 255, 1) 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.slider-container {
+    flex-wrap: wrap;
+    border: 5px black solid;
+    width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.haber-detay {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 300px;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+.haber img {
+    flex-grow: 1; /* Resimlerin eşit boyutta olmasını sağlar */
+    width: auto; /* Genişlik otomatik ayarlanır */
+    height: auto; /* Yükseklik otomatik ayarlanır */
+    max-width: 100%; /* Resimlerin container'ın genişliğini aşmamasını sağlar */
+    max-height: 100%; /* Resimlerin container'ın yüksekliğini aşmamasını sağlar */
+}
+.haber-detay h2 {
+    margin-top: 0;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+button.prev,
+button.next {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 1;
+    font-size: 15px;
+    margin: 0 10px; /* Slider düğmeleri arasındaki boşluk */
+}
+
+button.prev {
+    left: -25px; /* Düğme pozisyonunu ayarla */
+}
+
+button.next {
+    right: -25px; /* Düğme pozisyonunu ayarla */
+}
+#baslik{
+    display: flex;
+    background-color: white;
+    text-align: center; /* Metni yatayda ortalar */
+    margin-top: -50px;
+    font-size: 50px;
+    border-radius: 15px;
+    padding: 5px;
+}
